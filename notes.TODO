@@ -1,0 +1,45 @@
+Check-in App
+--- ✄ -----------------------
+
+Process:
+  ☐ User logs into system
+  ☐ Registers for conference events
+  ☐ At conference signs in via smart phone with qrcode at events to record progress
+
+Architechture:
+ ☐ Devise login system
+   ☐ Event users
+   ☐ Cat Admin
+   ☐ Super Admin
+
+ ☐ QR code generator
+   ☐ rqrcode_png
+
+☐ User
+  ☐ User logins in has user id
+  ☐ Scans QR code which just has the event id on it
+  ☐ System then marks them as attended
+
+☐ Category Admin
+  ☐ Print out QR code for event
+  ☐ Or display QR code on screen
+  ☐ Can update event details they are set as owners on
+
+☐ Super Admin
+  ☐ Control everything
+  ☐ Can delete events
+  ☐ Can Add events
+  ☐ Assigns Category admin to events as managers
+
+Controllers:
+ ☐ Event controller
+   ☐ Show Event Details
+     ☐ Presenter
+     ☐ Topic
+     ☐ Time
+     ☐ Location
+     ☐ Current checked in users
+     ☐ Total users registered for session
+   ☐ Add & Delete (Super admin only)
+   ☐ Update event
+   ☐ Print QR Code or large display
