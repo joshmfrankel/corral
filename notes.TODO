@@ -43,3 +43,5 @@ Controllers:
    ☐ Add & Delete (Super admin only)
    ☐ Update event
    ☐ Print QR Code or large display
+
+ ☐ Devise login system
