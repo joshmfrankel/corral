@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MftQr</title>
+  <title>Corral - For managing your herd</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -10,15 +10,15 @@
 
   <%= render 'layouts/header' %>
 
-  <% if notice %>
-    <p class="notice"><%= notice %></p>
-  <% end %>
-
-  <% if alert %>
-    <p class="alert"><%= alert %></p>
-  <% end %>
-
   <div class="container">
+    <% if notice %>
+      <p class="notice alert alert-success"><%= notice %></p>
+    <% end %>
+
+    <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
+
     <%= yield %>
   </div>
 

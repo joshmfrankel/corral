@@ -2,5 +2,9 @@
   margin-bottom: 0;
 }
 .subnav {
+  min-height: 25px;
 
+  ul li a {
+    padding: 5px 15px;
+  }
 }

@@ -54,7 +54,8 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'minitest-reporters', '1.0.10'
   gem 'mini_backtrace',     '0.1.3'
-  gem 'libnotify',          '0.9.1'  # Notifications
+  gem 'libnotify' if /linux/ =~ RUBY_PLATFORM
+  gem 'growl' if /darwin/ =~ RUBY_PLATFORM
   gem 'guard',              '2.11.1' # Guard to use libnotify properly
   gem 'guard-minitest',     '2.4.3'
   gem 'spring',             '1.2.0' # spring server

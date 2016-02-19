@@ -2,7 +2,9 @@ Rails.application.routes.draw do
 
   root 'pages#home'
 
+  # Pages
   get 'pages/contact'
+  get 'pages/about'
 
   devise_for :users
 
